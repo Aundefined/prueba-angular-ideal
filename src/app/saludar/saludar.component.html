@@ -1,0 +1,16 @@
+<div class="row" id="alto"></div>
+<div class="row">
+  <div class="col-xl-4"></div>
+  <div class="col-xl-4">
+    <form (ngSubmit)="saludar()">
+      <div class="form-group col-5">
+        <label for="numeroUno">¡Saluda a quien quieras!</label>
+        <input type="text" class="form-control" name="numeroUno" [(ngModel)]="nombre.Nombre" placeholder="Introducir nombre">
+      </div>
+      <button type="submit" class="btn btn-primary">Saludar</button>
+    </form>
+    <h4 *ngIf="nombrePintar">¡¡Un saludo para {{nombrePintar}}!!</h4>
+  </div>
+  <div class="col-xl-4">
+  </div>
+</div>
